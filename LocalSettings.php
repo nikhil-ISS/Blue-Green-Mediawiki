@@ -29,7 +29,7 @@ $wgSitename = "Test-wiki";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://3.91.93.63";
+$wgServer = "http://##.##.93.63";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -52,10 +52,10 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "terraform-20201211101851636300000001.c7omvzmm09ee.us-east-1.rds.amazonaws.com";
+$wgDBserver = "terraform-20201211101851636300000001.********.us-east-1.rds.amazonaws.com";
 $wgDBname = "my_wiki";
 $wgDBuser = "root";
-$wgDBpassword = "rootroot";
+$wgDBpassword = "*****";
 
 # MySQL specific settings
 $wgDBprefix = "test";
