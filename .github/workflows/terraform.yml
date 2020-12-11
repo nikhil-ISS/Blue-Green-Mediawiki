@@ -58,6 +58,8 @@ jobs:
         shell: bash
 
     steps:
+    - name: Test run
+      run: echo "Hello World"
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
