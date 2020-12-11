@@ -16,17 +16,17 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_launch_configuration" "launch_config" {
-  name_prefix   = "asg-ubuntu"
-  image_id      = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  name_prefix                 = "asg-ubuntu"
+  image_id                    = data.aws_ami.ubuntu.id
+  instance_type               = "t2.micro"
   associate_public_ip_address = true
-  security_groups = [aws_security_group.ingress_sg.id]
-  user_data = file("./B-G/user_data.sh")
-  key_name = "TestTtgw"
+  security_groups             = [aws_security_group.ingress_sg.id]
+  user_data                   = file("./B-G/user_data.sh")
+  key_name                    = "TestTtgw"
   lifecycle {
     create_before_destroy = true
   }
-  
+
 }
 
 

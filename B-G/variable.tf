@@ -1,3 +1,3 @@
 variable "availability_zones" {
-  default = ["a","b","c"]
-  }
+  default = ["a", "b", "c"]
+}

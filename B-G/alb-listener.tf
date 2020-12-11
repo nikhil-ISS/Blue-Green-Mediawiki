@@ -8,8 +8,8 @@ resource "aws_lb_listener" "alb_listener_forward_80" {
   port              = "80"
   protocol          = "HTTP"
   default_action {
-    type             = "forward"
-      forward {
+    type = "forward"
+    forward {
       target_group {
         arn    = aws_lb_target_group.alb_tg.arn
         weight = local.json_data.Blue
