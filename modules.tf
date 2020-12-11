@@ -6,10 +6,10 @@ provider "aws" {
 
   #access_key = "ACCESS_KEY"
   #secret_key = "SECRTE_KEY"
-  region  = var.region
+  region = var.region
 }
 
 
-module "B-G"{
+module "B-G" {
   source = "./B-G"
 }
