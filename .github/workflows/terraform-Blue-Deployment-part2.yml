@@ -1,4 +1,4 @@
-name: 'Terraform'
+name: 'terraform-Blue-Deployment-part2'
 
 on:
   workflow_dispatch:
