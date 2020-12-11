@@ -29,7 +29,7 @@ $wgSitename = "Test-wiki";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://localhost:8080";
+$wgServer = "http://3.91.93.63";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -52,10 +52,10 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "mysql";
+$wgDBserver = "terraform-20201211101851636300000001.c7omvzmm09ee.us-east-1.rds.amazonaws.com";
 $wgDBname = "my_wiki";
 $wgDBuser = "root";
-$wgDBpassword = "root";
+$wgDBpassword = "rootroot";
 
 # MySQL specific settings
 $wgDBprefix = "test";
@@ -94,14 +94,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "4636524e0fcc034ee74babc34ce7dba49b43bdedcca2feed7a1242c3e90875d2";
+$wgSecretKey = "9386d45ac43eafc5e327e759ff628ece6d36aa3e2176782d37f115fe06684c49";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "62987ef414c5018d";
+$wgUpgradeKey = "359b2d2533c49862";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
