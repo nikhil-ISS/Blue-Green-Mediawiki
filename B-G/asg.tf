@@ -1,19 +1,4 @@
-data "aws_ami" "ubuntu" {
-  most_recent = true
 
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-xenial-16.04-amd64-server-*"]
-  }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
-  }
-
-
-  owners = ["099720109477"] # Canonical
-}
 
 resource "aws_launch_configuration" "launch_config" {
   name_prefix                 = "asg-ubuntu"
@@ -31,13 +16,6 @@ resource "aws_launch_configuration" "launch_config" {
 
 
 
-data "aws_subnet_ids" "get_public_subnet_ids" {
-  vpc_id = aws_vpc.vpc.id
-  filter {
-    name   = "tag:Name"
-    values = ["Test_VPC_public_subnet"]
-  }
-}
 
 resource "aws_autoscaling_group" "asg_config" {
   name                 = "asg-B"
