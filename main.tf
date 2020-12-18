@@ -3,8 +3,11 @@ terraform {
 
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~> 3.12.0"
+    }
+    random = {
+      source = "hashicorp/random"
     }
   }
   backend "remote" {
@@ -18,8 +21,8 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
-  region  = "us-east-1"
+  #profile = "default"
+  region = "us-east-1"
 }
 
 module "B-G" {
