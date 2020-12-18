@@ -22,9 +22,6 @@ jobs:
     - name: activate asg-G.tf
       run: mv ./B-G/asg-G.tf.deactivate ./B-G/asg-G.tf
 
-    - name: change B-G-listener-percent
-      run: sed -i '/Blue/!b;c"Blue":50,' ./B-G/B-G-listener-percent.json | sed -i '/Green/!b;c"Green":50' ./B-G/B-G-listener-percent.json
-
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
