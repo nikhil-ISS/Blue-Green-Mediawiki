@@ -29,7 +29,7 @@ $wgSitename = "Test-wiki";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://localhost:80";
+$wgServer = "http://alb-test-1889260041.us-east-1.elb.amazonaws.com";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
