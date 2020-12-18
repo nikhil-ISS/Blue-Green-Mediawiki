@@ -49,26 +49,26 @@ on:
 
 jobs:
 
-  docker-build:
+#  docker-build:
 
-    runs-on: ubuntu-latest
+  #  runs-on: ubuntu-latest
     
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+  #  steps:
+  #  - name: Checkout
+  #    uses: actions/checkout@v2
     
-    - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        name: vichnik/docker-image
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
-        dockerfile: Dockerfile
-        tags: "Green"
+  #  - name: Publish to Registry
+  #    uses: elgohr/Publish-Docker-Github-Action@master
+  #    with:
+  #      name: vichnik/docker-image
+  #      username: ${{ secrets.DOCKERHUB_USERNAME }}
+  #      password: ${{ secrets.DOCKERHUB_TOKEN }}
+  #      dockerfile: Dockerfile
+  #      tags: "Green"
 
 
   terraform:
-    needs: docker-build
+    #needs: docker-build
     name: 'Terraform'
     runs-on: ubuntu-latest
 
