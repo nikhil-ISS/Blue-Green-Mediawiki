@@ -52,10 +52,10 @@ $wgEmailAuthentication = true;
 
 ## Database settings
 $wgDBtype = "mysql";
-$wgDBserver = "terraform-20201211101851636300000001.********.us-east-1.rds.amazonaws.com";
+$wgDBserver = "terraform-20201218081858975000000001.c5a7hcpmmobk.us-east-1.rds.amazonaws.com";
 $wgDBname = "my_wiki";
 $wgDBuser = "root";
-$wgDBpassword = "*****";
+$wgDBpassword = "rootroot";
 
 # MySQL specific settings
 $wgDBprefix = "test";
