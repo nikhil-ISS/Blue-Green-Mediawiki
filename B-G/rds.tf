@@ -15,7 +15,7 @@ resource "aws_db_instance" "rds-mysql" {
   instance_class         = "db.t2.micro"
   name                   = "mydb"
   username               = "root"
-  password               = "rootroot"
+  password               = "L@wson@1234"
   parameter_group_name   = "default.mysql5.7"
   db_subnet_group_name   = aws_db_subnet_group.rds-mysql-group.id
   vpc_security_group_ids = [aws_security_group.rds_ingress_sg.id]
